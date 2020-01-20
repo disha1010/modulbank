@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Тестовое задание</title>
+  </head>
+
+  <body>
+    <header class="header flex">
+      <div class="header--bg-white flex">
+        <a class="header-logo" href="#"></a>
+        <div class="header-search">
+          <i class="icon-search"></i>
+          <input class="header-search-input" type="text" placeholder="Поиск" />
+        </div>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-menu flex">
+          <li class="header-link"><a href="#">Деньги</a></li>
+          <li class="header-link"><a href="#">Контакты</a></li>
+          <li class="header-link dropdown">
+            <a href="#">Услуги</a>
+            <ul>
+              <li><a href="#">Кредиты</a></li>
+              <li><a href="#">Валютный контроль</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <span class="new-payment"></span>
+      <div class="profile flex dropdown">
+        <span class="profile-notification"></span>
+        <i class="profile-icon icon"></i>
+        <span class="profile-name">OOO &laquo;Родные просторы&raquo;</span>
+        <ul>
+          <li><a href="#">Профиль</a></li>
+          <li><a href="#">Платежи</a></li>
+          <li><a href="#">Выйти</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="content">
+        <div class="page-title">
+          <i class="close-icon"></i>
+          <h1>Платежное поручение № 5241234 от 23.09.2015</h1>
+        </div>
+        <div class="page-content">
+          <div class="container">
+            <div class="company-summ">
+              <h2 class="company-summ--count negative">– 23 500,0 &#x20bd;</h2>
+              <div class="company-summ--bill-number"><span class="txt-gray">со счета:</span> Расчетный счет (***012345)</div>
+              <div class="company-summ--status success">
+                <span class="txt-uppercase">Исполнен</span>, 21 июня 15:33
+              </div>
+            </div>
+
+            <div class="company-card">
+              <div class="company-card-details flex">
+                <div class="company-details">
+                  <h3 class="company-title">ООО "Родные просторы"</h3>
+                  <ul class="company-bank-details">
+                    <li>ИНН: 22341497819132</li>
+                    <li>Банк: ОАО Сбербанк</li>
+                    <li>БИК: 2352362365</li>
+                    <li>Счет: 40802810970010000395</li>
+                  </ul>
+                </div>
+                <ul class="company-rating">
+                  <li class="company-rating-item flex">
+                    <span class="company-rating-title">Высокая финансовая<br />устойчивость</span>
+                    <span class="rating-circle">88</span>
+                  </li>
+                  <li class="company-rating-item flex">
+                    <span class="company-rating-title">Высокая<br />благонадежность</span class="company-rating-title">
+                    <span class="rating-circle">100</span>
+                  </li>
+                  <li class="company-rating-item flex">
+                    <span class="company-rating-title">Кредитоспособность<br />44,5 млрд &#x20bd;</span class="company-rating-title">
+                    <span class="rating-circle rating-circle--fill">1<br/><span class="txt-smaller">Класс</span></span>
+                  </li>
+                </ul>
+              </div>
+
+              <p class="company-notification">
+                Оплата за партию ромашек и одуванчиков по договору 14023-023 от
+                14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00 ₽
+              </p>
+            </div>
+            
+            <p class="company-commission">
+              Комиссия банка: 70 р.<br>
+              Размер комиссии рассчитан автоматически
+              согласно тарифу вашей компании и является ознакомительным. Точный
+              размер комиссии определяется после передачи платежного документа на
+              обработку в банк.
+            </p>
+          </div>
+        </div>
+        <nav class="page-nav">
+          <ul class="page-nav-list flex">
+            <li class="page-nav-list-link">
+              <a href="#">
+                <i class="reload-icon"></i>
+                Повторить
+              </a>
+            </li>
+            <li class="page-nav-list-link">
+              <a href="#">
+                <i class="star-icon"></i>
+                В избранное
+              </a>
+            </li>
+            <li class="page-nav-list-link">
+              <a href="#">
+                <i class="dialog-icon"></i>
+                Спросить
+              </a>
+            </li>
+            <li class="page-nav-list-link">
+              <a href="#">
+                <i class="more-icon"></i>
+                Действия
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+  </body>
+</html>

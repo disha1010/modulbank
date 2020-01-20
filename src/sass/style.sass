@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic')
+
+body
+  margin: 0
+  background-color: #EDEFF1
+  font-family: 'Roboto', sans-serif
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+  
+h1
+  margin: 0
+  font-weight: 300
+  font-size: 24px
+  line-height: 28px
+
+h2
+  margin: 0
+  font-weight: 300
+  font-size: 46px
+  line-height: 54px
+
+h3
+  margin: 0
+  font-weight: normal
+  font-size: 20px
+  line-height: 23px
+
+.flex 
+  display: flex
+  align-items: center
+
+.container
+  width: 545px
+  margin: 0 auto
+ 
+.dropdown 
+  position: relative
+
+  ul
+    display: none
+
+  &:after
+    position: absolute
+    content: ""
+    right: 0
+    top: 4px
+    background-image: url(../images/arrow-down.svg)
+    background-repeat: no-repeat
+    background-size: contain
+    width: 9px
+    height: 4px
+
+.header
+  position: fixed
+  width: 100%
+  background: linear-gradient(90deg, #00417B 0%, #237CB1 50.26%, #2580B2 52.72%, #46D2CC 100%)
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.159392)
+  z-index: 10
+
+  .header--bg-white 
+    background-color: #ffffff
+    padding: 18px 32px 18px 20px
+
+    .header-logo
+      background-image: url(../images/logo.svg)
+      background-repeat: no-repeat
+      background-size: contain
+      width: 24px
+      height: 24px
+      margin-right: 27px
+
+    .header-search
+      position: relative
+      
+      .icon-search
+        display: inline-block
+        vertical-align: middle
+        background-image: url(../images/search.svg)
+        background-repeat: no-repeat
+        background-size: contain
+        width: 18px
+        height: 18px
+        margin-right: 5px
+
+      .header-search-input
+        width: 48px
+        background: transparent
+        border: none
+        font-size: 14px
+        line-height: 1.1428
+        color: #2B2B2B
+
+        &::placeholder
+          text-transform: uppercase
+          color: #2B2B2B
+
+  .header-nav
+    padding-left: 56px
+
+    .header-link
+      padding-right: 35px
+      font-size: 14px
+      line-height: 1.1428
+      text-transform: uppercase
+
+      &:last-child
+        padding-right: 0
+        
+      &.dropdown
+        padding-right: 14px
+        
+      a
+        color: #ffffff
+
+.close-icon
+  display: inline-block
+  background-image: url(../images/close.svg)
+  background-repeat: no-repeat
+  background-size: contain
+  width: 28px
+  height: 28px
+  vertical-align: middle
+
+.reload-icon
+  display: inline-block
+  background-image: url(../images/reload.svg)
+  background-repeat: no-repeat
+  background-size: contain
+  width: 20px
+  height: 20px
+  vertical-align: middle
+  
+.star-icon
+  display: inline-block
+  background-image: url(../images/star.svg)
+  background-repeat: no-repeat
+  background-size: contain
+  width: 20px
+  height: 20px
+  vertical-align: middle
+  
+.dialog-icon
+  display: inline-block
+  background-image: url(../images/dialog.svg)
+  background-repeat: no-repeat
+  background-size: contain
+  width: 22px
+  height: 20px
+  vertical-align: middle
+
+.more-icon
+  display: inline-block
+  background-image: url(../images/more.svg)
+  background-repeat: no-repeat
+  background-size: contain
+  width: 22px
+  height: 4px
+  vertical-align: middle
+
+.txt-gray
+  color: #808080
+
+.txt-uppercase
+  text-transform: uppercase
+
+.txt-smaller
+  font-size: 0.5em
+
+.main
+  position: relative
+  padding-top: 60px
+
+  .content 
+    position: absolute
+    left: 380px
+    width: calc(100% - 380px)
+    height: calc(100vh - 60px)
+    background-color: #ffffff
+    box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.23112)
+
+  .page-title 
+    padding: 15px 25px 16px
+    background-color: rgba(0, 0, 0, 0.0289572)
+
+    h1
+      display: inline-block
+      vertical-align: middle
+
+
+
+  .page-content
+    .company-summ
+      padding-top: 26px
+      text-align: center
+      margin-bottom: 15px
+
+      .company-summ--count
+        margin-bottom: 2px
+
+        &.negative
+          color: #CF4545
+      
+      .company-summ--bill-number
+        margin-bottom: 10px
+        font-weight: 300
+        font-size: 16px
+        line-height: 22px
+
+      .company-summ--status
+        display: inline-block
+        padding: 3px 8px 2px 11px
+        border-radius: 125px
+        font-weight: 500
+        font-size: 11px
+        line-height: 13px
+        color: #ffffff
+  
+        &.success
+          background-color: #81C624
+    
+    .company-card
+      background: #ffffff
+
+      .company-card-details
+        padding: 25px 50px 18px 30px
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.390682), 0px 3px 10px rgba(0, 0, 0, 0.0869282)
+
+        .company-details
+          flex-grow: 2
+
+          .company-title
+            margin-bottom: 13px
+
+        .company-bank-details
+          font-weight: 300
+          font-size: 16px
+          line-height: 28px
+
+        .company-rating
+          flex-grow: 1
+
+        .company-rating-item
+          justify-content: space-between
+          margin-bottom: 10px
+
+        .company-rating-title
+          font-size: 12px
+          color: #2873b9
+          text-align: center
+          border-bottom: 1px dotted #2873b9
+
+        .rating-circle
+          width: 39px
+          margin-left: 15px
+          padding: 10px 0px
+          text-align: center
+          border: 3px solid #e6e6e6
+          border-radius: 50%
+
+          &.rating-circle--fill
+            background-color: #a5d475
+            border-color: #a5d475
+            font-size: 18px
+            line-height: 0.6
+            color: #ffffff
+
+      .company-notification
+        margin: 0
+        padding: 20px 50px 20px 30px
+        background: #F2F2F2
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 4px 15px rgba(0, 0, 0, 0.0869282), 0px 2px 3px rgba(0, 0, 0, 0.0651891)
+        font-weight: normal
+        font-size: 16px
+        line-height: 20px
+
+    .company-commission
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+      color: #808080
+
+.page-nav
+  position: fixed
+  bottom: 0
+  width: calc(100% - 380px)
+  background-color: #ffffff
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 0px 15px rgba(0, 0, 0, 0.0869282)
+
+  .page-nav-list
+    width: 545px
+    justify-content: space-between
+    margin: 0 auto
+    padding-top: 19px
+    padding-bottom: 21px
+    i
+      margin-right: 10px
+    a
+      font-weight: normal
+      font-size: 14px
+      line-height: 16px
+      color: #2C2F32
