@@ -37,10 +37,16 @@ h3
   display: flex
   align-items: center
 
-.container
-  width: 545px
-  margin: 0 auto
  
+.txt-gray
+  color: #808080
+
+.txt-uppercase
+  text-transform: uppercase
+
+.txt-smaller
+  font-size: 0.5em
+
 .dropdown 
   position: relative
   cursor: pointer
@@ -134,28 +140,28 @@ h3
   .header__profile
     padding-right: 17px
 
-  .profile__notice
-    position: relative
-    margin-right: 40px
+.profile__notice
+  position: relative
+  margin-right: 40px
 
-    .notice__count
-      position: absolute
-      left: 9px
-      bottom: 9px
-      padding: 2px 5px 1px 4px
-      background-color: #E54D4D
-      border-radius: 7.5px
-      font-weight: 500
-      font-size: 10px
-      line-height: 12px
+.profile-icon 
+  margin-right: 10px
 
-  .profile__nav
-    .profile-icon 
-      margin-right: 10px
-  
-    .dropdown ul
-      right: 0
-      text-align: right
+.profile__nav
+  .dropdown ul
+    right: 0
+    text-align: right  
+
+.notice__count
+  position: absolute
+  left: 9px
+  bottom: 9px
+  padding: 2px 5px 1px 4px
+  background-color: #E54D4D
+  border-radius: 7.5px
+  font-weight: 500
+  font-size: 10px
+  line-height: 12px
 
 .search-icon
   margin-right: 5px
@@ -201,28 +207,20 @@ h3
   &.dropdown
     padding-right: 12px
 
-.txt-gray
-  color: #808080
-
-.txt-uppercase
-  text-transform: uppercase
-
-.txt-smaller
-  font-size: 0.5em
-
-.main
+.main-page
   position: relative
   padding-top: 60px
 
-  .content 
+  .main-page__content 
     position: absolute
     left: 380px
     width: calc(100% - 380px)
     height: calc(100vh - 60px)
+    min-height: 660px
     background-color: #ffffff
     box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.23112)
 
-  .page-title 
+  .main-page__title 
     padding: 15px 25px 16px
     background-color: rgba(0, 0, 0, 0.0289572)
 
@@ -230,114 +228,115 @@ h3
       display: inline-block
       vertical-align: middle
 
+  .main-page__desc
+    width: 545px
+    margin: 0 auto
 
+.company-summ
+  padding-top: 26px
+  text-align: center
+  margin-bottom: 15px
 
-  .page-content
-    .company-summ
-      padding-top: 26px
-      text-align: center
-      margin-bottom: 15px
+  .company-summ__count
+    margin-bottom: 2px
 
-      .company-summ_count
-        margin-bottom: 2px
-
-        &.negative
-          color: #CF4545
-      
-      .company-summ_bill-number
-        margin-bottom: 10px
-        font-weight: 300
-        font-size: 16px
-        line-height: 22px
-
-      .company-summ_status
-        display: inline-block
-        padding: 3px 8px 2px 11px
-        border-radius: 125px
-        font-weight: 500
-        font-size: 11px
-        line-height: 13px
-        color: #ffffff
+    &.company-summ__count_negative
+      color: #CF4545
   
-        &.success
-          background-color: #81C624
-    
-    .company-card
-      background: #ffffff
+  .company-summ__bill-number
+    margin-bottom: 10px
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
 
-      .company-card-details
-        padding: 25px 50px 18px 30px
-        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.390682), 0px 3px 10px rgba(0, 0, 0, 0.0869282)
+  .company-summ__status
+    display: inline-block
+    padding: 3px 8px 2px 11px
+    border-radius: 125px
+    font-weight: 500
+    font-size: 11px
+    line-height: 13px
+    color: #ffffff
 
-        .company-details
-          flex-grow: 2
+    &.company-summ__status_success
+      background-color: #81C624
+  
+.company-card
+  background: #ffffff
 
-          .company-title
-            margin-bottom: 13px
+  .company-card__details
+    padding: 25px 50px 18px 30px
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.390682), 0px 3px 10px rgba(0, 0, 0, 0.0869282)
+    border-radius: 3px
 
-        .company-bank-details
-          font-weight: 300
-          font-size: 16px
-          line-height: 28px
+  .company-card__info
+    flex-grow: 1
 
-        .company-rating
-          flex-grow: 1
+  .company-card__title
+    margin-bottom: 13px
 
-        .company-rating-item
-          justify-content: space-between
-          margin-bottom: 10px
+  .company-card__bank-details
+    font-weight: 300
+    font-size: 16px
+    line-height: 28px
 
-        .company-rating-title
-          font-size: 12px
-          color: #2873b9
-          text-align: center
-          border-bottom: 1px dotted #2873b9
+  .rating__title-list__item
+    justify-content: space-between
+    margin-bottom: 10px
 
-        .rating-circle
-          width: 39px
-          margin-left: 15px
-          padding: 10px 0px
-          text-align: center
-          border: 3px solid #e6e6e6
-          border-radius: 50%
+  .rating__title
+    min-width: 120px
+    font-size: 12px
+    color: #2873b9
+    text-align: center
+    text-decoration: underline
 
-          &.rating-circle_fill
-            background-color: #a5d475
-            border-color: #a5d475
-            font-size: 18px
-            line-height: 0.6
-            color: #ffffff
+  .rating__circle
+    display: block
+    width: 39px
+    margin-left: 15px
+    padding: 10px 0px
+    text-align: center
+    border: 3px solid #e6e6e6
+    border-radius: 50%
 
-      .company-notification
-        margin: 0
-        padding: 20px 50px 20px 30px
-        background: #F2F2F2
-        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 4px 15px rgba(0, 0, 0, 0.0869282), 0px 2px 3px rgba(0, 0, 0, 0.0651891)
-        font-weight: normal
-        font-size: 16px
-        line-height: 20px
+    &.rating__circle_fill
+      background-color: #a5d475
+      border-color: #a5d475
+      font-size: 18px
+      line-height: 0.6
+      color: #ffffff
 
-    .company-commission
-      font-weight: normal
-      font-size: 12px
-      line-height: 16px
-      color: #808080
+  .company-card__notice
+    margin: 1px
+    padding: 20px 50px 20px 30px
+    background: #F2F2F2
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 4px 15px rgba(0, 0, 0, 0.0869282), 0px 2px 3px rgba(0, 0, 0, 0.0651891)
+    font-weight: normal
+    font-size: 16px
+    line-height: 20px
+    border-radius: 0 0 3px 3px
 
-.page-nav
+.company-commission
+  font-weight: normal
+  font-size: 12px
+  line-height: 16px
+  color: #808080
+
+.main-page__panel
   position: fixed
   bottom: 0
   width: calc(100% - 380px)
   background-color: #ffffff
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 0px 15px rgba(0, 0, 0, 0.0869282)
 
-  .page-nav-list
+  .panel-list
     width: 545px
     justify-content: space-between
     margin: 0 auto
     padding-top: 19px
-    padding-bottom: 21px
-    i
-      margin-right: 10px
+    padding-bottom: 20px
+
     a
       font-weight: normal
       font-size: 14px
