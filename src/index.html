@@ -8,38 +8,50 @@
   </head>
 
   <body>
-    <header class="header flex">
-      <div class="header--bg-white flex">
-        <a class="header-logo" href="#"></a>
-        <div class="header-search">
-          <i class="icon-search"></i>
-          <input class="header-search-input" type="text" placeholder="Поиск" />
+    <header class="header">
+      <section class="header_white flex">
+        <a class="header__logo" href="#"></a>
+        <div class="header__search">
+          <i class="search-icon icon"></i>
+          <input class="search__input" type="text" placeholder="Поиск" />
         </div>
-      </div>
-      <nav class="header-nav">
-        <ul class="header-menu flex">
-          <li class="header-link"><a href="#">Деньги</a></li>
-          <li class="header-link"><a href="#">Контакты</a></li>
-          <li class="header-link dropdown">
-            <a href="#">Услуги</a>
-            <ul>
-              <li><a href="#">Кредиты</a></li>
-              <li><a href="#">Валютный контроль</a></li>
+      </section>
+
+      <section class="header_gradient flex">
+        <nav class="header__nav">
+          <ul class="nav-menu flex">
+            <li class="nav-menu__item"><a href="#">Деньги</a></li>
+            <li class="nav-menu__item"><a href="#">Контакты</a></li>
+            <li class="nav-menu__item dropdown">
+              <a href="#">Услуги</a>
+              <ul class="dropdown__menu">
+                <li><a href="#">Кредиты</a></li>
+                <li><a href="#">Валютный контроль</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__new-payment payment-icon icon" href="#" title="Новый платеж"></a>
+        <div class="header__profile flex">
+          <a class="profile__notice" href="#">
+            <i class="notice-icon icon"></i>
+            <span class="notice__count">50</span>
+          </a>
+          <nav class="profile__nav flex">
+            <i class="profile-icon icon"></i>
+            <ul class="nav-menu">
+              <li class="nav-menu__item dropdown">
+                <a href="#">OOO &laquo;Родные просторы&raquo;</a> 
+                <ul class="dropdown__menu">
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Платежи</a></li>
+                  <li><a href="#">Выйти</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-      </nav>
-      <span class="new-payment"></span>
-      <div class="profile flex dropdown">
-        <span class="profile-notification"></span>
-        <i class="profile-icon icon"></i>
-        <span class="profile-name">OOO &laquo;Родные просторы&raquo;</span>
-        <ul>
-          <li><a href="#">Профиль</a></li>
-          <li><a href="#">Платежи</a></li>
-          <li><a href="#">Выйти</a></li>
-        </ul>
-      </div>
+          </nav>
+        </div>
+      </section>
     </header>
 
     <main class="main">
@@ -51,9 +63,9 @@
         <div class="page-content">
           <div class="container">
             <div class="company-summ">
-              <h2 class="company-summ--count negative">– 23 500,0 &#x20bd;</h2>
-              <div class="company-summ--bill-number"><span class="txt-gray">со счета:</span> Расчетный счет (***012345)</div>
-              <div class="company-summ--status success">
+              <h2 class="company-summ_count negative">– 23 500,0 &#x20bd;</h2>
+              <div class="company-summ_bill-number"><span class="txt-gray">со счета:</span> Расчетный счет (***012345)</div>
+              <div class="company-summ_status success">
                 <span class="txt-uppercase">Исполнен</span>, 21 июня 15:33
               </div>
             </div>
@@ -80,7 +92,7 @@
                   </li>
                   <li class="company-rating-item flex">
                     <span class="company-rating-title">Кредитоспособность<br />44,5 млрд &#x20bd;</span class="company-rating-title">
-                    <span class="rating-circle rating-circle--fill">1<br/><span class="txt-smaller">Класс</span></span>
+                    <span class="rating-circle rating-circle_fill">1<br/><span class="txt-smaller">Класс</span></span>
                   </li>
                 </ul>
               </div>
@@ -104,25 +116,25 @@
           <ul class="page-nav-list flex">
             <li class="page-nav-list-link">
               <a href="#">
-                <i class="reload-icon"></i>
+                <i class="reload-icon icon"></i>
                 Повторить
               </a>
             </li>
             <li class="page-nav-list-link">
               <a href="#">
-                <i class="star-icon"></i>
+                <i class="star-icon icon"></i>
                 В избранное
               </a>
             </li>
             <li class="page-nav-list-link">
               <a href="#">
-                <i class="dialog-icon"></i>
+                <i class="dialog-icon icon"></i>
                 Спросить
               </a>
             </li>
             <li class="page-nav-list-link">
               <a href="#">
-                <i class="more-icon"></i>
+                <i class="more-icon icon"></i>
                 Действия
               </a>
             </li>
