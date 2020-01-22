@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Тестовое задание</title>
+  <link href="main.css" rel="stylesheet"></head>
+
+  <body>
+    <header class="header">
+      <section class="header_white flex">
+        <a class="header__logo" href="#"></a>
+        <div class="header__search">
+          <i class="search-icon icon"></i>
+          <input class="search__input" type="text" placeholder="Поиск" />
+        </div>
+      </section>
+
+      <section class="header_gradient flex">
+        <nav class="header__nav">
+          <ul class="nav-menu flex">
+            <li class="nav-menu__item"><a href="#">Деньги</a></li>
+            <li class="nav-menu__item"><a href="#">Контакты</a></li>
+            <li class="nav-menu__item dropdown">
+              <a href="#">Услуги</a>
+              <ul class="dropdown__menu">
+                <li><a href="#">Кредиты</a></li>
+                <li><a href="#">Валютный контроль</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__new-payment payment-icon icon" href="#" title="Новый платеж"></a>
+        <div class="header__profile flex">
+          <a class="profile__notice" href="#">
+            <i class="notice-icon icon"></i>
+            <span class="notice__count">5</span>
+          </a>
+          <nav class="profile__nav flex">
+            <i class="profile-icon icon"></i>
+            <ul class="nav-menu">
+              <li class="nav-menu__item dropdown">
+                <a href="#">OOO &laquo;Родные просторы&raquo;</a> 
+                <ul class="dropdown__menu">
+                  <li><a href="#">Профиль</a></li>
+                  <li><a href="#">Платежи</a></li>
+                  <li><a href="#">Выйти</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <main class="main-page">
+      <section class="main-page__content">
+        <div class="main-page__title">
+          <a href="#" class="close-icon icon"></a>
+          <h1>Платежное поручение № 5241234 от 23.09.2015</h1>
+        </div>
+
+        <div class="main-page__desc">
+          <div class="container">
+            <div class="company-summ">
+              <h2 class="company-summ__count company-summ__count_negative">– 23 500,0 &#x20bd;</h2>
+              <div class="company-summ__bill-number"><span class="txt-gray">со счета:</span> Расчетный счет (***012345)</div>
+              <div class="company-summ__status company-summ__status_success">
+                <span class="txt-uppercase">Исполнен</span>, 21 июня 15:33
+              </div>
+            </div>
+
+            <div class="company-card">
+              <div class="company-card__details flex">
+                <div class="company-card__info">
+                  <h3 class="company-card__title">ООО "Родные просторы"</h3>
+                  <ul class="company-card__bank-details">
+                    <li>ИНН: 22341497819132</li>
+                    <li>Банк: ОАО Сбербанк</li>
+                    <li>БИК: 2352362365</li>
+                    <li>Счет: 40802810970010000395</li>
+                  </ul>
+                </div>
+                <div class="company-card__rating">
+                  <ul class="rating__title-list">
+                    <li class="rating__title-list__item flex">
+                      <a href="#" class="rating__title">Высокая финансовая<br />устойчивость</a>
+                      <span href="#" class="rating__circle" data-rating="0.88">
+                        <span class="rating__number">88</span>
+                      </span>
+                    </li>
+                    <li class="rating__title-list__item flex">
+                      <a href="#" class="rating__title">Высокая<br />благонадежность</a>
+                      <span href="#" class="rating__circle" data-rating="1">
+                        <span class="rating__number">100</span>
+                      </span>
+                    </li>
+                    <li class="rating__title-list__item flex">
+                      <a href="#" class="rating__title">Кредитоспособность<br />44,5 млрд &#x20bd;</a>
+                      <span class="rating__circle rating__circle_fill">1<br/><span class="txt-smaller">Класс</span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="company-card__notice">
+                Оплата за партию ромашек и одуванчиков по договору 14023-023 от
+                14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00 ₽
+              </p>
+            </div>
+            
+            <p class="company-commission">
+              Комиссия банка: 70 р.<br>
+              Размер комиссии рассчитан автоматически
+              согласно тарифу вашей компании и является ознакомительным. Точный
+              размер комиссии определяется после передачи платежного документа на
+              обработку в банк.
+            </p>
+          </div>
+        </div>
+        
+        <nav class="main-page__panel">
+          <ul class="panel-list flex container">
+            <li class="panel-list__item">
+              <a href="#">
+                <i class="reload-icon icon"></i>
+                Повторить
+              </a>
+            </li>
+            <li class="panel-list__item">
+              <a href="#">
+                <i class="star-icon icon"></i>
+                В избранное
+              </a>
+            </li>
+            <li class="panel-list__item">
+              <a href="#">
+                <i class="dialog-icon icon"></i>
+                Спросить
+              </a>
+            </li>
+            <li class="panel-list__item">
+              <a href="#">
+                <i class="more-icon icon"></i>
+                Действия
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+  <script type="text/javascript" src="main.js"></script></body>
+</html>
