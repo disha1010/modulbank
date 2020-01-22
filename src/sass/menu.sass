@@ -1,0 +1,73 @@
+.nav-menu__item
+  position: relative
+  padding: 23px 35px 22px 0
+  font-size: 14px
+  line-height: 1.1428
+  text-transform: uppercase
+
+  &:hover:before
+    content: ""
+    position: absolute
+    left: 0
+    bottom: 0
+    width: calc(100% - 35px)
+    height: 5px
+    background-color: $menu-item--hovered
+
+  &:last-child
+    padding-right: 0
+    &:hover:before
+      width: 100%
+    
+  &.dropdown
+    padding-right: 12px
+
+.dropdown 
+  position: relative
+  cursor: pointer
+
+  .dropdown__menu
+    display: none
+    position: absolute
+    top: 60px
+    background-color: $dropdown-bg
+    padding: 20px 0
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.390682), 0px 3px 10px rgba(0, 0, 0, 0.0869282)
+
+    li 
+      position: relative
+      text-transform: none
+      margin-bottom: 15px
+      padding: 0 25px
+      white-space: nowrap
+      font-weight: normal
+      
+      &:hover::before
+        content: ""
+        position: absolute
+        left: 15px
+        top: 4px
+        width: 6px
+        height: 6px
+        background-color: $menu-item--hovered
+        border-radius: 50%
+
+      &:last-child
+        margin-bottom: 0
+
+    a 
+      color: $dropdown-link
+
+  &:hover ul
+    display: block
+
+  &:after
+    content: ""
+    position: absolute
+    right: 0
+    top: 27px
+    width: 9px
+    height: 4px
+    background-image: url(../images/arrow-down.svg)
+    background-repeat: no-repeat
+    background-size: contain

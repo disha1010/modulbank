@@ -1,0 +1,89 @@
+.company-card
+  position: relative
+  background-color: $card-bg
+
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    right: 0px
+    width: 30px
+    height: 30px
+    background-color: $card-bg
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.1)
+
+  &::after
+    content: ""
+    position: absolute
+    top: -21px
+    right: -21px
+    width: 42px
+    height: 42px
+    background-color: $card-bg
+    box-shadow: inset 2px 0 0 -2px rgba(0, 0, 0, 0.390682), inset 7px 0 9px -7px rgba(0, 0, 0, 0.0869282)
+    transform: rotate(-45deg)
+
+  .company-card__details
+    padding: 25px 50px 18px 30px
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.390682), 0px 3px 10px rgba(0, 0, 0, 0.0869282)
+    border-radius: 3px
+
+  .company-card__info
+    flex-grow: 1
+
+  .company-card__title
+    margin-bottom: 13px
+    color: $card-title
+
+  .company-card__bank-details
+    font-weight: 300
+    font-size: 16px
+    line-height: 28px
+    color: $card-details
+
+  .company-card__notice
+    margin: 1px
+    padding: 20px 50px 20px 30px
+    background-color: $card-notice-bg
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 4px 15px rgba(0, 0, 0, 0.0869282), 0px 2px 3px rgba(0, 0, 0, 0.0651891)
+    border-radius: 0 0 3px 3px
+    font-weight: normal
+    font-size: 16px
+    line-height: 20px
+    color: #2B2B2B
+
+.company-summ
+  padding-top: 26px
+  text-align: center
+  margin-bottom: 15px
+
+  .company-summ__count
+    margin-bottom: 2px
+
+    &.company-summ__count_negative
+      color: $summ--negative
+  
+  .company-summ__bill-number
+    margin-bottom: 10px
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    color: $card-details
+
+  .company-summ__status
+    display: inline-block
+    padding: 3px 8px 2px 11px
+    border-radius: 125px
+    font-weight: 500
+    font-size: 11px
+    line-height: 13px
+    color: $status-txt
+
+    &.company-summ__status_success
+      background-color: $status-bg--success
+
+.company-commission
+  font-weight: normal
+  font-size: 12px
+  line-height: 16px
+  color: $txt-secondary

@@ -1,0 +1,39 @@
+.rating__title-list__item
+  justify-content: space-between
+  margin-bottom: 10px
+
+  .rating__title
+    min-width: 120px
+    font-size: 10px
+    color: $rating-link
+    text-align: center
+    text-decoration: underline
+
+  .rating__circle
+    display: block
+    position: relative
+    width: 43px
+    height: 43px
+    margin-left: 15px
+    text-align: center
+    border-radius: 50%
+    background-color: $circle-border
+    color: $rating-txt
+
+    &.rating__circle_fill
+      height: auto
+      padding: 11.5px 0
+      background-color: $circle-bg--filled
+      border-color: $circle-border--filled
+      font-size: 18px
+      line-height: 0.6
+      color: $circle-txt--filled
+
+    .rating__number
+      position: absolute
+      top: 2px
+      left: 2px
+      width: 39px
+      padding: 10px 0
+      background-color: $circle-bg
+      border-radius: 50%

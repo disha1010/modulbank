@@ -1,0 +1,42 @@
+.main-page
+  position: relative
+  padding-top: 60px
+
+  .main-page__content 
+    position: absolute
+    left: 380px
+    width: calc(100% - 380px)
+    background-color: $content-bg
+    box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.23112)
+
+  .main-page__title 
+    padding: 16px 25px
+    background-color: $title-bg
+
+    h1
+      display: inline-block
+      vertical-align: middle
+      color: $title-txt
+
+  .main-page__desc
+    height: calc(100vh - 180px)
+    overflow-y: auto
+
+  .main-page__panel
+    position: fixed
+    bottom: 0
+    width: calc(100% - 380px)
+    background-color: $content-bg
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 0px 15px rgba(0, 0, 0, 0.0869282)
+
+    .panel-list
+      justify-content: space-between
+      padding-top: 19px
+      padding-bottom: 20px
+
+      a
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        color: #2C2F32
+  
