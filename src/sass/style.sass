@@ -5,6 +5,7 @@ body
   margin: 0
   background-color: #EDEFF1
   font-family: 'Roboto', sans-serif
+  overflow: hidden
 
 ul
   list-style-type: none
@@ -46,6 +47,10 @@ h3
 
 .txt-smaller
   font-size: 0.5em
+
+.container
+  width: 545px
+  margin: 0 auto
 
 .dropdown 
   position: relative
@@ -229,8 +234,8 @@ h3
       vertical-align: middle
 
   .main-page__desc
-    width: 545px
-    margin: 0 auto
+    height: calc(100vh - 180px)
+    overflow-y: auto
 
 .company-summ
   padding-top: 26px
@@ -260,9 +265,34 @@ h3
 
     &.company-summ__status_success
       background-color: #81C624
-  
+
+.stub-vertical-space
+  height: 400px
+
 .company-card
-  background: #ffffff
+  position: relative
+  background-color: #ffffff
+
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    right: 0px
+    width: 30px
+    height: 30px
+    background-color: #ffffff
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.1)
+
+  &::after
+    content: ""
+    position: absolute
+    top: -21px
+    right: -21px
+    width: 42px
+    height: 42px
+    background-color: #ffffff
+    box-shadow: inset 2px 0 0 -2px rgba(0, 0, 0, 0.390682), inset 7px 0 9px -7px rgba(0, 0, 0, 0.0869282)
+    transform: rotate(-45deg)
 
   .company-card__details
     padding: 25px 50px 18px 30px
@@ -286,26 +316,38 @@ h3
 
   .rating__title
     min-width: 120px
-    font-size: 12px
+    font-size: 10px
     color: #2873b9
     text-align: center
     text-decoration: underline
 
   .rating__circle
+    position: relative
     display: block
-    width: 39px
+    width: 43px
+    height: 43px
     margin-left: 15px
-    padding: 10px 0px
     text-align: center
-    border: 3px solid #e6e6e6
     border-radius: 50%
+    background-color: #e6e6e6
 
     &.rating__circle_fill
+      height: auto
+      padding: 11.5px 0
       background-color: #a5d475
       border-color: #a5d475
       font-size: 18px
       line-height: 0.6
       color: #ffffff
+
+    .rating__number
+      position: absolute
+      top: 2px
+      left: 2px
+      width: 39px
+      padding: 10px 0
+      background-color: #ffffff
+      border-radius: 50%
 
   .company-card__notice
     margin: 1px
@@ -342,3 +384,10 @@ h3
       font-size: 14px
       line-height: 16px
       color: #2C2F32
+
+@media screen and (min-width: 1170px) 
+  .header__new-payment
+    position: absolute
+    left: 50%
+    margin-right: 0
+    transform: translate(-50%)
